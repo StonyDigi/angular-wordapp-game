@@ -1,0 +1,24 @@
+<table class="table caption-top">
+    <caption>List of words</caption>
+    <thead>
+      <tr>
+        <th scope="col">hungarian</th>
+        <th scope="col">english</th>
+        <th scope="col">goods</th>
+        <th scope="col">bads</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       
+        <tr *ngFor="let x of this.service.words">
+            <td>{{x.hun}}</td>
+            <td>{{x.eng}}</td>
+            <td>{{x.goods}}</td>
+            <td>{{x.bads}}</td>
+            <td>
+                <button (click)="this.service.delete(x.uid)" class="btn btn-sm btn-danger">Delete</button>
+            </td>
+          </tr>
+    </tbody>
+  </table>

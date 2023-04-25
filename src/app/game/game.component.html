@@ -1,0 +1,8 @@
+<h1>{{this.actual.hun}}</h1>
+<input [(ngModel)]="this.userValue" type="text" />
+<button *ngIf="this.result == ''" (click)="check()" class="btn btn-warning">Check</button>
+
+<div *ngIf="this.result != ''">
+    {{this.result}}
+    <button (click)="next()" class="btn btn-primary">Next word</button>
+</div>

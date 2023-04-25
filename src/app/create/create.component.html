@@ -1,0 +1,11 @@
+    
+    <div class="mb-3">
+      <h1>Create word</h1>
+      <label class="form-label">Hungarian word</label>
+      <input type="email" class="form-control" [(ngModel)]="this.actual.hun" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">English word</label>
+      <input type="text" class="form-control" [(ngModel)]="this.actual.eng" />
+    </div>
+    <button type="button" class="btn btn-primary" (click)='createAndRedirect()'>Create word</button>

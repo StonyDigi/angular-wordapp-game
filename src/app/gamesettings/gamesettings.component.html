@@ -1,0 +1,6 @@
+<h1>Setup game</h1>
+<br>
+<input [(ngModel)]="this.limit" type="range" min="1" [max]="this.service.words.length"/>
+<h3>{{this.limit}}</h3>
+
+<button (click)="play()" class="btn btn-success">Play game</button>
